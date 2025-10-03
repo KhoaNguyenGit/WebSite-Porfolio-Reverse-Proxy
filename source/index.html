@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== UNICONS ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">k<span>h</span>oa</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active-link">Home</a></li>
+
+            <li><a href="#about" class="nav__link">About</a></li>
+
+            <li><a href="#services" class="nav__link">Services</a></li>
+
+            <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ui uil-times"></i>
+          </div>
+        </div>
+
+        <div class="nav__socials">
+            <a 
+              href="https://www.facebook.com/khoa.nguyen.924081/" 
+              target="_blank" 
+              class="nav__social-link"
+            >
+
+              <i class="uil uil-facebook-f"></i>
+            </a>
+
+            <a 
+              href="https://www.linkedin.com/in/khoa-nguyen-77a5a7268/" 
+              target="_blank" 
+              class="nav__social-link"
+            >
+
+              <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a 
+              href="https://github.com/KhoaNguyenGit" 
+              target="_blank" 
+              class="nav__social-link"
+            >
+
+              <i class="uil uil-github"></i>
+            </a>
+
+            <a 
+              href="https://www.instagram.com/abkhoa/" 
+              target="_blank" 
+              class="nav__social-link"
+            >
+
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
+
+          <div class="nav__btns">
+            <a href="#contact" class="nav__link-btn btn">Let's talk</a>
+
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="uil uil-bars"></i>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Welcome to my portfolio</span>
+            <h1 class="home__title">
+              Hi, I'm Khoa,
+              <br> <span>an AI Engineer</span> 
+              <br> Based in Vietnam
+            </h1>
+          </div>
+
+          <img src="assets/img/avatar_img.png" alt="" class="home__img" />
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <img src="assets/img/about_img.png" alt="" class="about__img" />
+
+          <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+
+
+              <p class="about__description">
+                I'm Khoa Nguyen, an AI Engineer passionate about building innovative solutions that apply artificial intelligence to real-world challenges. 
+                With a strong background in machine learning, deep learning, and data analysis, I specialize in developing intelligent systems that enhance user experiences and drive business growth. 
+                My expertise spans natural language processing, generative AI, and predictive analytics. 
+                I'm committed to continuous learning and staying at the forefront of AI advancements to deliver impactful, cutting-edge solutions. 
+              </p>
+
+              <div class="tabs__btns">
+                <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
+                <span class="tabs__btn" data-target="#experience">Experiences</span>
+                <span class="tabs__btn" data-target="#education">Education & Certification</span>
+              </div>
+
+              <div class="tabs__content">
+                <div class="tabs__item tab__active" data-content id="skills">
+                  <div class="tabs__data grid">
+
+                    <p class="tabs__description">
+                      <span>Natural Language Processing</span>
+                      <span>Building text classification, information extraction, and conversational AI systems using language models.</span>
+                    </p>
+
+                    <p class="tabs__description">
+                      <span>AI System Design</span>
+                      <span>Building end-to-end AI pipelines, from data preprocessing to deployment.</span>
+                    </p>
+
+                    <p class="tabs__description">
+                      <span>Generative AI</span>
+                      <span>Creating LLM-powered applications for content generation and automation.</span>
+                    </p>
+
+                    <p class="tabs__description">
+                      <span>System Monitoring</span>
+                      <span>Tracking model and service performance using tools like Grafana and Prometheus.</span>
+                    </p>
+
+                  </div>
+                </div>
+
+                <div class="tabs__item" data-content id="experience">
+                  <div class="tabs__data grid">
+                    <p class="tabs__description">
+                      <span>AI Engineer</span> - ILLUMINUS.AI COMPANY LIMITED
+                      <span>Sep 2024 - Jan 2025</span>
+                    </p>
+
+                    <p class="tabs__description">
+                      <span>Intern AI Engineer</span> - 2M SOLUTIONS COMPANY LIMITED
+                      <span>Apr 2024 -  Aug 2024</span>
+                    </p>
+                    
+                  </div>
+                </div>
+
+                <div class="tabs__item" data-content id="education">
+                  <div class="tabs__data grid">
+                    <p class="tabs__description">
+                      <span>Engineer of Information Technology</span> - Sai Gon University
+                      <span>Oct 2020 - March 2025</span>
+                    </p>
+
+                    <p class="tabs__description">
+                      <span>TOEIC: 735</span> - IIG Vietnam
+                      <span><a 
+                        href="https://drive.google.com/file/d/1DglbEZJ61jpol5u8idEqafOsauIFampA/view?usp=sharing" 
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        class="link__">
+                        View Certificate</a></span>
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SERVICES ===============-->
+      <section class="services section" id="services">
+        <h2 class="section__title">My Awesome Services</h2>
+        <p class="section__description">There are some </p>
+
+        <div class="services__container container grid">
+
+          <div class="services__item">
+            <i class="uil uil-servers services__icon"></i>
+
+            <h3 class="services__title">System Administration</h3>
+            <p class="services__description">Managing and optimizing servers to ensure high performance, stability, and security.</p>
+          </div>
+
+          <div class="services__item">
+            <i class="uil uil-monitor services__icon"></i>
+
+            <h3 class="services__title">System Monitoring</h3>
+            <p class="services__description">Monitoring performance, setting up alerts, and troubleshooting to maintain reliable and efficient systems.</p>
+          </div>
+
+          <div class="services__item">
+            <i class="uil uil-brain services__icon"></i>
+
+            <h3 class="services__title">AI Development</h3>
+            <p class="services__description">Building and deploying AI solutions to automate tasks, extract insights, and boost operational efficiency.</p>
+          </div>
+
+            <div class="services__item">
+              <i class="uil uil-chart services__icon"></i>
+              <h3 class="services__title">Data Analytics</h3>
+              <p class="services__description">Turning raw data into meaningful insights through advanced analytics and AI-driven techniques to support smarter business decisions.</p>
+            </div>
+
+        </div>
+
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">My Lastest Projects</h2>
+        <p class="section__description">Here are some of my recent works that showcase my skills and expertise.</p>
+
+        <div class="portfolio__container container grid">
+          <a href="https://aiyounggeneration.io.vn/" target="_blank">
+            <div class="portfolio__item">
+              
+                <img 
+                  src="./assets/img/feature_1.png" 
+                  alt="" 
+                  class="portfolio__img" 
+                />
+
+                <div class="portfolio__data">
+                  <p class="portfolio__subtitle">Development</p>
+                  <h3 class="portfolio__title">Video To Slide</h3>
+                  <p class="portfolio__description">A project that automatically transforms video content into slide presentations to support summarization, learning, and knowledge sharing.</p>
+                
+                </div>
+              
+            </div>
+          </a>
+
+          <a href="https://github.com/KhoaNguyenGit/Text_classification_using_LLM">
+            <div class="portfolio__item">
+              <img 
+                src="./assets/img/feature_2.png" 
+                alt="" 
+                class="portfolio__img" 
+              />
+
+              <div class="portfolio__data">
+                <p class="portfolio__subtitle">Development</p>
+                <h3 class="portfolio__title">Text Classification using LLM</h3>
+                <p class="portfolio__description">An academic project that fine-tunes the PhoBERT model for binary text classification to enhance text understanding and categorization.</p>
+              </div>
+
+            </div>
+
+          </div>
+        </a>
+
+      </section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h2 class="section__title">Contact Me</h2>
+            <p class="contact__description">
+              Feel free to reach out for collaborations or just a friendly chat!
+              Connect me via phone: 
+              <a href="tel:+84772901431">+84 77 290 1431</a> or email:
+              <a href="mailto:khoanguyen.work9602@gmail.com">khoanguyen.work9602@gmail.com</a>
+            </p>
+
+            <form class="contact__form" id="contact-form">
+                <div class="contact__form-input">
+                  <input 
+                  type="text" 
+                  name="name" 
+                  placeholder="Your Name *"
+                  class="contact__input"
+                  id="contact-name"
+                  >
+                </div>
+
+                <div class="contact__form-input">
+                  <input 
+                  type="email" 
+                  name="email" 
+                  placeholder="Your e-mail *"
+                  class="contact__input"
+                  id="contact-mail"
+                  >
+                </div>
+
+                <div class="contact__form-input">
+                  <input 
+                  type="text" 
+                  name="subject" 
+                  placeholder="Write a Subject *"
+                  class="contact__input"
+                  id="contact-subject"
+                  >
+                </div>
+
+                <div class="contact__form-input">
+                  <textarea 
+                    name="message" 
+                    placeholder="Your Message *"
+                    class="contact__input textarea"
+                    id="contact-message"
+                  ></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn">
+
+                <p class="error__message" id="error-message"></p>
+            </form>
+          </div>
+
+          <img src="./assets/img/contact_img.jpg" alt="" class="contact__img">
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <a href="index.html" class="footer__logo">k<span>h</span>oa</a>
+
+          <div class="footer__socials">
+            <a 
+              href="https://www.facebook.com/khoa.nguyen.924081/" 
+              target="_blank" 
+              class="footer__social-link"
+              >
+
+              <i class="uil uil-facebook-f"></i>
+            </a>
+
+            <a 
+              href="https://www.linkedin.com/in/khoa-nguyen-77a5a7268/" 
+              target="_blank" 
+              class="footer__social-link"
+              >
+
+              <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a 
+              href="https://github.com/KhoaNguyenGit" 
+              target="_blank" 
+              class="footer__social-link"
+              >
+
+              <i class="uil uil-github"></i>
+            </a>
+
+            <a 
+              href="https://www.instagram.com/abkhoa/" 
+              target="_blank" 
+              class="footer__social-link"
+              >
+
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
+
+          <p class="footer__copyright">© 2025. All rights reserved.</p>
+        </div>
+
+      </footer>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
