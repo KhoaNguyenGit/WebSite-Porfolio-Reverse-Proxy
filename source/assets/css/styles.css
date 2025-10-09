@@ -170,6 +170,10 @@ input {
   color: var(--first-color);
 }
 
+span.title__description {
+  color: var(--title-color);
+}
+
 /*=============== HEADER & NAV ===============*/
 .header {
   position: absolute;
@@ -325,7 +329,7 @@ input {
 }
 
 .about__description {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .tabs__btns{
