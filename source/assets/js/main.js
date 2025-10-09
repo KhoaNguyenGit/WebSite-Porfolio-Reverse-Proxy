@@ -30,6 +30,25 @@ function linkAction() {
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const navLinks = document.querySelectorAll('.nav__link');
+const talkBtn = document.querySelector('.nav__link-btn');
+const contactLink = document.querySelector('.nav__link[href="#contact"]');
+
+// Handle normal nav links
+navLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    navLinks.forEach(l => l.classList.remove('active-link'));
+    this.classList.add('active-link');
+  });
+});
+
+// Handle "Let's Talk" button separately
+if (talkBtn && contactLink) {
+  talkBtn.addEventListener('click', function () {
+    navLinks.forEach(l => l.classList.remove('active-link'));
+    contactLink.classList.add('active-link');
+  });
+}
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
